@@ -1,0 +1,81 @@
+body {
+    background-color: #0a1a0a; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 50px 0;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif; /* Робимо шрифт жирнішим */
+}
+
+/* Заголовок сайту зверху */
+header h1 {
+    color: #000000 !important; /* ЧОРНИЙ КОЛІР */
+    background: #ccff00; /* Лимонна підкладка для контрасту */
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.video-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Ядерна лимонна обводка */
+.video-item {
+    width: 100%;
+    padding: 15px; 
+    background: linear-gradient(270deg, #ccff00, #39ff14, #00ff00, #ccff00);
+    background-size: 400% 400%;
+    border-radius: 30px;
+    animation: rainbow 4s ease infinite;
+    box-shadow: 0 0 50px #ccff00;
+    
+    /* Колір тексту всередині блоку з відео */
+    color: #000000; 
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    border: 5px solid #000000; /* Додав чорну тонку рамку самому відео */
+    display: block;
+}
+
+/* Назва під кожним відео */
+h3 {
+    color: #000000 !important; /* СУВОРО ЧОРНИЙ КОЛІР */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+/* Анімація переливу */
+@keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.cta-button {
+    color: #4d0000; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button {
+    background-image: linear-gradient(45deg, #ff4e00, #ec9f05);
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.8); 
+    border: 2px solid #ff4e00;
+}
